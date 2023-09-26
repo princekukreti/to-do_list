@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 109vh;
+    background: rgb(163, 150, 163);
+    
+    
+}
+header{
+    padding: 2rem  12rem;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1 {
+    font-size: 49px;
+    font-weight: 315;
+    color: black;
+    margin-bottom: 19px;
+}
+#input-area{
+    display: flex;
+}
+input , button {
+    appearance: none;
+    border: none;
+    background : none;
+}
+#input{
+    flex: 1 1 0%;
+    background-color:rgb(114, 107, 107) ;
+    padding: 11px;
+    border-radius: 17px;
+    color: #d6eaea;
+    margin-right: 13px;
+    font-size: 20px;
+}
+#input::placeholder{
+    color: #eff7f7;
+}
+#task-submit {
+    color: #f0f5f5;
+    font-size: 20px;
+    font-weight: 670;
+    background: black;
+    border-radius: 10px;
+    cursor: context-menu;
+    transition: 0.8s;
+}
+#task-submit:hover{
+    opacity: .5;
+}
+#task-submit:active{
+    opacity: .4;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 1rem 5rem;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-to-do{
+    padding: 11px;
+}
+.task-to-do h2 {
+    font-size: 35px;
+    font-weight: 210;
+    color: black;
+    margin-bottom: 18px;
+}
+#task .tasks {
+    display: flex;
+    justify-content: center ;
+    background-color: rgb(63, 29, 63);
+    padding: 11px;
+    border-radius: 20px;
+    margin-bottom: 0px;   
+}
+#task .tasks .area{
+    flex: 1 1 0%;
+}
+#task .tasks .area .text {
+    color: #cacdcd;
+    font-size: 20px;
+    width: 100%;
+    display: block;
+    transition: 0.5sec;
+}
+#task .tasks .action {
+    display: flex;
+    margin: 0 -0.6rem;
+}
+.tasks .action button {
+    cursor: pointer;
+    margin: 0 0rem;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: none;
+    transition: 0.4sec;
+} 
+.tasks .action button:hover{
+    opacity: .5;
+}
+.tasks .action button:active{
+    opacity: .4;
+}
+.tasks .action .delete {
+    color: rgb(243, 223, 243);
+}
